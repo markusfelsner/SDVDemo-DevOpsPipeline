@@ -194,7 +194,7 @@
                         "name": "SDVDemo_SubnetVM",
                         "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_SDVDemo_VNet_name'), 'SDVDemo_SubnetVM')]",
                         "properties": {
-                            "addressPrefix": "192.168.0.0/24",
+                            "addressPrefix": "192.168.0.0/16",
                             "delegations": [],
                             "privateEndpointNetworkPolicies": "Disabled",
                             "privateLinkServiceNetworkPolicies": "Enabled"
@@ -214,7 +214,7 @@
                 "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_SDVDemo_VNet_name'))]"
             ],
             "properties": {
-                "addressPrefix": "192.168.0.0/24",
+                "addressPrefix": "192.168.1.0/24",
                 "delegations": [],
                 "privateEndpointNetworkPolicies": "Disabled",
                 "privateLinkServiceNetworkPolicies": "Enabled"
