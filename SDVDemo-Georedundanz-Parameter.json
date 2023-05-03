@@ -3,19 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_SDVDemoVM1_name": {
-            "value": "SDVDemoVM-eastus"
+            "value": "SDVDemoVM-EU"
         },
         "virtualNetworks_SDVDemo_VNet_name": {
-            "value": "SDVDemoVNet-eastus"
+            "value": "SDVDemoVNet-EU"
         },
         "networkInterfaces_sdvdemovm171_name": {
-            "value": "SDVDemoNIC-eastus"
+            "value": "SDVDemoNIC-EU"
         },
         "publicIPAddresses_SDVDemo_PublicIP_name": {
-            "value": "SDVDemoPIP-eastus"
+            "value": "SDVDemoPIP-EU"
         },
         "networkSecurityGroups_SDVDemoVM1_nsg_name": {
-            "value": "SDVDemoNSG-eastus"
+            "value": "SDVDemoNSG-EU"
         }
     }
 }
