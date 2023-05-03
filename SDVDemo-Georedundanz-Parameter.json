@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_SDVDemoVM1_name": {
+            "value": "SDVDemoVM-eastus"
+        },
+        "virtualNetworks_SDVDemo_VNet_name": {
+            "value": "SDVDemoVNet-eastus"
+        },
+        "networkInterfaces_sdvdemovm171_name": {
+            "value": "SDVDemoNIC-eastus"
+        },
+        "publicIPAddresses_SDVDemo_PublicIP_name": {
+            "value": "SDVDemoPIP-eastus"
+        },
+        "networkSecurityGroups_SDVDemoVM1_nsg_name": {
+            "value": "SDVDemoNSG-eastus"
+        }
+    }
+}
