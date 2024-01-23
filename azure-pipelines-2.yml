@@ -6,8 +6,10 @@
 trigger:
 - main
 
+
 variables:
   azureSubscription: 'Azure subscription 1' 
+  SystemDebug: true
 
 pool:
   vmImage: ubuntu-latest
