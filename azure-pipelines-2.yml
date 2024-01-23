@@ -35,7 +35,7 @@ steps:
 - task: AzureCLI@2
   displayName: 'Install Apache using Azure CLI'
   inputs:
-    azureSubscription: $(azureSubscription)
+    azureSubscription: 'Azure subscription 1(f447a473-5fa0-4945-b2f6-996b3254ce5b)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
