@@ -7,7 +7,7 @@ trigger:
 - main
 
 variables:
-  azureSubscription: 'f447a473-5fa0-4945-b2f6-996b3254ce5b' 
+  azureSubscription: 'Azure subscription 1' 
 
 pool:
   vmImage: ubuntu-latest
