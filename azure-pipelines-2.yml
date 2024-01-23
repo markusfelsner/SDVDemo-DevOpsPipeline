@@ -6,6 +6,9 @@
 trigger:
 - main
 
+variables:
+  azureSubscription: 'f447a473-5fa0-4945-b2f6-996b3254ce5b' 
+
 pool:
   vmImage: ubuntu-latest
 
@@ -35,6 +38,6 @@ steps:
     sshEndpoint: $(azureSubscription)
     runOptions: 'inline'
     inline: |
-      sudo apt-get update
-      sudo apt-get install -y apache2
+      sudo chmod +x $(Build.SourcesDirectory)/scripts/install-apache.sh
+      $(Build.SourcesDirectory)/scripts/install-apache.sh
     failOnStdErr: true
