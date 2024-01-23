@@ -17,3 +17,15 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Azure subscription 1(f447a473-5fa0-4945-b2f6-996b3254ce5b)'
+    subscriptionId: 'f447a473-5fa0-4945-b2f6-996b3254ce5b'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'SDVDemo-Pipeline2'
+    location: 'West US'
+    templateLocation: 'Linked artifact'
+    csmFile: 'SDVDemo-Georedundanz-Template.json'
+    csmParametersFile: 'SDVDemo-Georedundanz-Parameter.json'
+    deploymentMode: 'Incremental'
