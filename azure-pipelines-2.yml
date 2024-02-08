@@ -28,7 +28,7 @@ steps:
     azureResourceManagerConnection: 'Azure subscription 1(f447a473-5fa0-4945-b2f6-996b3254ce5b)'
     subscriptionId: 'f447a473-5fa0-4945-b2f6-996b3254ce5b'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'SDVDemo-Pipeline2'
+    resourceGroupName: 'SDVDemo-Pipeline5'
     location: 'West US'
     templateLocation: 'Linked artifact'
     csmFile: 'SDVDemo-Georedundanz-Template.json'
