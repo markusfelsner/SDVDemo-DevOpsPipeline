@@ -35,10 +35,8 @@ steps:
     csmParametersFile: 'SDVDemo-Georedundanz-Parameter.json'
     deploymentMode: 'Incremental'
 - task: AzureCLI@2
-  displayName: 'Install Apache using Azure CLI'
   inputs:
     azureSubscription: 'Azure subscription 1(f447a473-5fa0-4945-b2f6-996b3254ce5b)'
-    scriptType: 'bash'
+    scriptType: 'batch'
     scriptLocation: 'inlineScript'
-    inlineScript: |
-    az vm extension set --resource-group SDVDemo --vm-name SDVDemoVM-EU --name customScript --publisher Microsoft.Azure.Extensions --settings "{'commandToExecute': 'apt-get -y update && apt-get install -y apache2 && echo SDVDemo Standort East US > /var/www/html/index.html'}"
+    inlineScript: 'az vm extension set --resource-group SDVDemo --vm-name SDVDemoVM-EU --name customScript --publisher Microsoft.Azure.Extensions --settings "{''commandToExecute'': ''apt-get -y update && apt-get install -y apache2 && echo SDVDemo Standort East US > /var/www/html/index.html''}"'
