@@ -41,4 +41,4 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-    az vm extension set --resource-group SDVDemo-Pipeline2 --vm-name SDVDemoVM-EU --name customScript --publisher Microsoft.Azure.Extensions --version 2.0 --settings '{"script": "$(Build.SourcesDirectory)/install-apache.sh"}'
+    az vm extension set --resource-group SDVDemo --vm-name SDVDemoVM-EU --name customScript --publisher Microsoft.Azure.Extensions --settings "{'commandToExecute': 'apt-get -y update && apt-get install -y apache2 && echo SDVDemo Standort East US > /var/www/html/index.html'}"
